@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mamimami26.github.io/temoushop/sitemap.xml
