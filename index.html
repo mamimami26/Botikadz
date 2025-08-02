@@ -7,83 +7,103 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
+    <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
     <h1>🛍️ Gropharm</h1>
   </header>
 
+  <div class="sidebar" id="sidebar">
+    <a href="#health">منتجات الصحة والجمال</a>
+    <a href="#kitchen">منتجات المطبخ</a>
+    <a href="#phones">اكسسوارات الهواتف</a>
+    <a href="#sports">معدات رياضية</a>
+    <a href="#kids">ألعاب الأطفال</a>
+  </div>
+
   <main>
-    <section id="products">
-      <h2>منتجاتنا</h2>
+    <!-- منتجات الصحة والجمال -->
+    <section id="health">
+      <h2>منتجات الصحة والجمال</h2>
       <div class="products-grid">
-
         <div class="product">
-          <img src="https://i.imgur.com/hBMVwEQ.jpeg" alt="فيتامين C">
+          <img src="https://i.imgur.com/hBMVwEQ.jpeg" alt="مسمنة سكودي">
           <h3>مسمنة سكودي</h3>
-          <p>🌿 مسمنة سكودي الأصلية لزيادة الوزن 🌿
-
-✔️ تحفّز الشهية  
-✔️ تساعد في علاج فقر الدم  
-✔️ تساهم في زيادة الوزن بشكل صحي  
-✔️ تُخفّف من أعراض الحساسية وضيق التنفّس  
-
----  
-✅ طريقة الاستعمال:  
-🔹 ملعقة صغيرة قبل كل وجبة.  
-
----  
-⚠️ تنبيه هام:  
-🚫 يُمنع استخدام المنتج من قِبل:  
-– النساء الحوامل  
-– الأطفال أقل من 3 سنوات  
-</p>
+          <p>مسمنة سكودي الأصلية لزيادة الوزن وتحفيز الشهية وعلاج فقر الدم.</p>
           <span class="price">2250 دج</span>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMAkwW94gVwyLy4IFOVUlPp9St7ajBqdIR47pkB9Y6fepV0w/viewform?usp=pp_url&entry.1729957016=مسمنة سكودي" class="btn" target="_blank">📋 اطلبه الآن</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMAkwW94gVwyLy4IFOVUlPp9St7ajBqdIR47pkB9Y6fepV0w/viewform?usp=pp_url&entry.1729957016=مسمنة سكودي" class="order-button" target="_blank">📋 اطلبه الآن</a>
         </div>
 
         <div class="product">
-          <img src="https://i.imgur.com/S8m1r1F.jpeg" alt="فيتامين D3">
-          <h3>مسمنة اللحسة الصحراوية</h3>
-          <p>🌿 الحسّة الصحراوية 🌿
-
-جمالك يبدأ من الداخل!
-
-💊 مكمل غذائي طبيعي 100%  
-💃 لزيادة الوزن وتكبير المناطق الأنثوية (الأرداف - الصدر - الفخذين)
-
-✨ مناسب للفتيات والنساء  
-✨ بدون هرمونات أو مواد ضارة  
-✨ نتائج ملحوظة خلال أسابيع!  
-
-📦 الكمية: 60 كبسولة  
-📈 طريقة آمنة وصحية لإبراز منحنياتك 💕
-
-🕒 كبسولة مرتين يوميًا بعد الأكل  
-💧 اشربي ماء كافي واتبعي نظام غذائي متوازن  
-
-🚫 غير مناسب للحامل أو المرضع  
-📩 اطلبه الآن وابدئي رحلتك نحو جسم أنثوي وجذاب!  
-</p>
+          <img src="https://i.imgur.com/S8m1r1F.jpeg" alt="اللحسة الصحراوية">
+          <h3>اللحسة الصحراوية</h3>
+          <p>مكمل طبيعي لتكبير المناطق الأنثوية وزيادة الوزن بدون هرمونات.</p>
           <span class="price">2950 دج</span>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMAkwW94gVwyLy4IFOVUlPp9St7ajBqdIR47pkB9Y6fepV0w/viewform?usp=pp_url&entry.1729957016=اللحسة الصحراوية" class="btn" target="_blank">📋 اطلبه الآن</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMAkwW94gVwyLy4IFOVUlPp9St7ajBqdIR47pkB9Y6fepV0w/viewform?usp=pp_url&entry.1729957016=اللحسة الصحراوية" class="order-button" target="_blank">📋 اطلبه الآن</a>
         </div>
 
         <div class="product">
-          <img src="https://i.imgur.com/SyWr3zp.jpeg" alt="أوميغا 3">
-          <h3>المسمنة الامريكية</h3>
-          <p>متوفر مربى مسمنة الأمريكية  
-
-• الفوائد:  
-✓ تسمن البدن و تقضي على النحافة  
-✓ تشد البشرة تسمن وتجمل الوجه  
-✓ تزيد من صلابة العظام  
-✓ تفتح الشهية  
-✓ كما انها نافعة لفقر الدم  
-</p>
+          <img src="https://i.imgur.com/SyWr3zp.jpeg" alt="المسمنة الأمريكية">
+          <h3>المسمنة الأمريكية</h3>
+          <p>مربى لتسمين الجسم والوجه، تقوية العظام وفتح الشهية.</p>
           <span class="price">2000 دج</span>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMAkwW94gVwyLy4IFOVUlPp9St7ajBqdIR47pkB9Y6fepV0w/viewform?usp=pp_url&entry.1729957016=المسمنة الامريكية" class="btn" target="_blank">📋 اطلبه الآن</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMAkwW94gVwyLy4IFOVUlPp9St7ajBqdIR47pkB9Y6fepV0w/viewform?usp=pp_url&entry.1729957016=المسمنة الأمريكية" class="order-button" target="_blank">📋 اطلبه الآن</a>
         </div>
+      </div>
+    </section>
 
+    <!-- منتجات المطبخ -->
+    <section id="kitchen">
+      <h2>منتجات المطبخ</h2>
+      <div class="products-grid">
+        <div class="product">
+          <img src="https://i.imgur.com/PZ7U8uh.jpeg" alt="منتج مطبخ">
+          <h3>SONASHI Mixeur 3en1 - 600W</h3>
+          <p>شفرات حادة، مفرمة كبيرة، وعاء، سرعتان، طاقة 600 واط، حامل للحائط.</p>
+          <span class="price">6000 دج</span>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMAkwW94gVwyLy4IFOVUlPp9St7ajBqdIR47pkB9Y6fepV0w/viewform?usp=pp_url&entry.1729957016=SONASHI Mixeur" class="order-button" target="_blank">📋 اطلبه الآن</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- الهواتف -->
+    <section id="phones">
+      <h2>اكسسوارات الهواتف</h2>
+      <div class="products-grid">
+        <div class="product">
+          <img src="https://i.imgur.com/78dXpIf.jpeg" alt="A68 Plus">
+          <h3>طقم A68 Plus ساعة واكسسوار</h3>
+          <p>ساعة ذكية + اكسسوارات فاخرة + شاحن + خواتم + أساور + هدية رائعة.</p>
+          <span class="price">3500 دج</span>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMAkwW94gVwyLy4IFOVUlPp9St7ajBqdIR47pkB9Y6fepV0w/viewform?usp=pp_url&entry.1729957016=طقم A68 Plus" class="order-button" target="_blank">📋 اطلبه الآن</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- معدات رياضية -->
+    <section id="sports">
+      <h2>معدات رياضية</h2>
+      <div class="products-grid">
+        <div class="product">
+          <img src="https://i.imgur.com/krVTK6e.jpeg" alt="مشد الخصر">
+          <h3>مشد الخصر الحراري</h3>
+          <p>يعزز التعرق، يدعم الظهر، يُرتدى تحت الملابس أو أثناء التمارين.</p>
+          <span class="price">2500 دج</span>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMAkwW94gVwyLy4IFOVUlPp9St7ajBqdIR47pkB9Y6fepV0w/viewform?usp=pp_url&entry.1729957016=مشد خصر حراري" class="order-button" target="_blank">📋 اطلبه الآن</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ألعاب الأطفال -->
+    <section id="kids">
+      <h2>ألعاب الأطفال</h2>
+      <div class="products-grid">
+        <div class="product">
+          <img src="https://i.imgur.com/gW9NGrC.jpeg" alt="لعبة الصبار">
+          <h3>لعبة الصبار</h3>
+          <p>صبار راقص يردد الكلمات ويغني ويضحك الأطفال. ممتعة وآمنة.</p>
+          <span class="price">1600 دج</span>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMAkwW94gVwyLy4IFOVUlPp9St7ajBqdIR47pkB9Y6fepV0w/viewform?usp=pp_url&entry.1729957016=لعبة الصبار" class="order-button" target="_blank">📋 اطلبه الآن</a>
+        </div>
       </div>
     </section>
   </main>
@@ -93,5 +113,6 @@
     <p>📞 للاستفسارات: 966500000000</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
-</html>
+  </html>
